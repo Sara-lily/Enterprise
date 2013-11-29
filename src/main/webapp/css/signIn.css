@@ -1,0 +1,20 @@
+#signInBar {
+	float:right;
+}
+
+#signInBar ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+#signInBar li {
+	display:inline;
+	padding:15px;
+}
+
+#signInBar a {
+	color:white;
+	text-decoration:none;
+	font-size:1.5em;
+}

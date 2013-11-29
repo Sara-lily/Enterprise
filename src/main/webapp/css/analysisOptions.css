@@ -1,0 +1,35 @@
+.rightButtons {
+	width:100%;
+	padding-top: 20px;
+}
+
+.right {
+	position:absolute;
+	right:20%;
+}
+
+.padding {
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.sized {
+	width: 100px;
+}
+
+td {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.magicLabel {
+	padding: 10px;
+	color: white;
+	font-size: 1.5em;
+}
+
+#accordionSize {
+	width: 70%;
+	margin: 0 auto;
+	height: 70%;
+}

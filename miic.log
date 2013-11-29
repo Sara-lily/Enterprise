@@ -1,0 +1,270 @@
+2013-11-25 16:42:45,803 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from URL [file:src/main/webapp/WEB-INF/spring/miicConfig.xml]
+2013-11-25 16:42:47,960 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from URL [file:src/main/webapp/WEB-INF/spring/applicationContext-hibernate.xml]
+2013-11-25 16:42:48,347 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from URL [file:src/main/webapp/WEB-INF/spring/applicationContext-dataSource.xml]
+2013-11-25 16:42:49,488 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@255d8ff: startup date [Mon Nov 25 16:42:49 EST 2013]; root of context hierarchy
+2013-11-25 16:42:51,795 INFO [org.springframework.context.support.PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2013-11-25 16:42:51,880 INFO [org.springframework.context.support.PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2013-11-25 16:42:51,930 INFO [org.springframework.context.support.PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [miic.properties]
+2013-11-25 16:42:52,548 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7291ca34: defining beans [org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#1,sessionFactory,transactionManager,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,miicDAO,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#2,miicService,icPlanValidator,dataVarPlotter,gov.nasa.miic.persistence.PrepareDataStore#0,opendapCache,execFactory,leoGeoPredictor,leoLeoPredictor,tleFactory,goes13,goes12,modisaqua,envisat,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2013-11-25 16:42:55,156 INFO [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2013-11-25 16:42:55,236 INFO [org.hibernate.Version] - HHH000412: Hibernate Core {4.1.0.Final}
+2013-11-25 16:42:55,272 INFO [org.hibernate.cfg.Environment] - HHH000206: hibernate.properties not found
+2013-11-25 16:42:55,290 INFO [org.hibernate.cfg.Environment] - HHH000021: Bytecode provider name : javassist
+2013-11-25 16:43:00,649 INFO [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2013-11-25 16:43:00,717 INFO [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2013-11-25 16:43:00,813 INFO [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2013-11-25 16:43:00,844 INFO [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] - HHH000397: Using ASTQueryTranslatorFactory
+2013-11-25 16:43:02,968 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000228: Running hbm2ddl schema update
+2013-11-25 16:43:02,969 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000102: Fetching database metadata
+2013-11-25 16:43:03,037 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000396: Updating schema
+2013-11-25 16:43:03,222 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: public.data_variables
+2013-11-25 16:43:03,224 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [bands, name, generator, averaged, missingvalue, instrumentname, instrument]
+2013-11-25 16:43:03,224 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: [fk23c55b22dfa7e386]
+2013-11-25 16:43:03,225 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: [data_variables_pkey]
+2013-11-25 16:43:03,348 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: public.event_data
+2013-11-25 16:43:03,366 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [id, data, type]
+2013-11-25 16:43:03,367 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: []
+2013-11-25 16:43:03,368 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: [event_data_pkey]
+2013-11-25 16:43:03,481 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: public.event_data_files
+2013-11-25 16:43:03,483 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [event_dataid, file]
+2013-11-25 16:43:03,483 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: [fk1fa84467ff691f06]
+2013-11-25 16:43:03,484 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: []
+2013-11-25 16:43:03,614 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: public.events
+2013-11-25 16:43:03,615 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [planid, latsouth, id, reason, referencedataid, targetdataid, state, lonwest, latnorth, loneast, enddate, begindate]
+2013-11-25 16:43:03,616 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: [fkb307e119a02128ff, fkb307e1192bb230cc, fkb307e119d69c1692]
+2013-11-25 16:43:03,616 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: [events_pkey]
+2013-11-25 16:43:03,719 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: public.instruments
+2013-11-25 16:43:03,720 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [filestartdatepattern, fileduration, filenameformat, name, filedurationmask, rsr, type, satid, providerinfo]
+2013-11-25 16:43:03,721 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: []
+2013-11-25 16:43:03,722 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: [instruments_pkey]
+2013-11-25 16:43:03,819 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: public.plan_prediction_ranges
+2013-11-25 16:43:03,820 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [planid, reason, state, enddate, begindate]
+2013-11-25 16:43:03,821 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: [fk794f50f0a02128ff]
+2013-11-25 16:43:03,822 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: []
+2013-11-25 16:43:03,931 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: public.plans
+2013-11-25 16:43:03,932 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [predictorproperties, id, refinstrumentname, reason, created, name, state, owner, datacollectionoptions, tgtinstrumentname]
+2013-11-25 16:43:03,933 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: [fk65cda6ab8c6cde4, fk65cda6a73e1532]
+2013-11-25 16:43:03,934 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: [plans_pkey]
+2013-11-25 16:43:04,047 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: public.reference_data_variable_refs
+2013-11-25 16:43:04,048 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [planid, variablename, band, instrumentname]
+2013-11-25 16:43:04,049 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: [fk5a44f3c2a02128ff, fk5a44f3c27d972bf7]
+2013-11-25 16:43:04,050 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: []
+2013-11-25 16:43:04,143 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: public.target_data_variable_refs
+2013-11-25 16:43:04,150 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [planid, variablename, band, instrumentname]
+2013-11-25 16:43:04,151 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: [fk88e11fbc7d972bf7, fk88e11fbca02128ff]
+2013-11-25 16:43:04,151 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: []
+2013-11-25 16:43:04,155 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000232: Schema update complete
+2013-11-25 16:43:04,757 INFO [org.springframework.orm.hibernate4.HibernateTransactionManager] - Using DataSource [org.apache.commons.dbcp.BasicDataSource@3bf4eeae] of Hibernate SessionFactory for HibernateTransactionManager
+2013-11-25 16:43:06,088 INFO [gov.nasa.miic.opendap.OPeNDAPFileCache] - Contents of cache for server http://projects.mechdyne.com:8080/opendap
+2013-11-25 16:43:06,099 INFO [gov.nasa.miic.opendap.OPeNDAPFileCache] - 	Collection modisaqua (matches MYD021KM\.A\d{7}\.\d{4}\.\d{3}\.\d{13}\.hdf): 60 files
+2013-11-25 16:43:06,100 INFO [gov.nasa.miic.opendap.OPeNDAPFileCache] - 	Collection goes13 (matches MCIDAS\.G-13\.\d{4}\.\d{2}\.\d{2}\.\d{4}\.08K\.bin): 24 files
+2013-11-25 16:43:14,766 INFO [gov.nasa.miic.persistence.MIICHibernate] - getInstrumentByName goes13
+2013-11-25 16:43:18,554 INFO [gov.nasa.miic.persistence.MIICHibernate] - getInstrumentByName goes12
+2013-11-25 16:43:18,652 INFO [gov.nasa.miic.persistence.MIICHibernate] - getInstrumentByName modisaqua
+2013-11-25 16:43:19,197 INFO [gov.nasa.miic.persistence.MIICHibernate] - getInstrumentByName envisat
+2013-11-25 16:43:20,150 INFO [gov.nasa.miic.planprocessing.ICPlanExecutor] - Execute plan null until PREDICT
+2013-11-25 16:43:26,196 INFO [gov.nasa.miic.persistence.MIICHibernate] - storeICPlan Intercal of goes13 vs modisaqua
+2013-11-25 16:43:27,186 INFO [gov.nasa.miic.planprocessing.ICPlanExecutor] - Execute plan 7 until LOCATE
+2013-11-25 16:43:47,209 INFO [gov.nasa.miic.opendap.OPeNDAPFileCache] - Found 1711 files on OPeNDAP server http://projects.mechdyne.com:8080/opendap
+2013-11-25 16:43:47,365 INFO [gov.nasa.miic.opendap.OPeNDAPFileCache] - Contents of server http://projects.mechdyne.com:8080/opendap
+2013-11-25 16:43:47,366 INFO [gov.nasa.miic.opendap.OPeNDAPFileCache] - 	Collection modisaqua (matches MYD021KM\.A\d{7}\.\d{4}\.\d{3}\.\d{13}\.hdf): 60 files
+2013-11-25 16:43:47,366 INFO [gov.nasa.miic.opendap.OPeNDAPFileCache] - 	Collection goes13 (matches MCIDAS\.G-13\.\d{4}\.\d{2}\.\d{2}\.\d{4}\.08K\.bin): 24 files
+2013-11-25 16:43:47,367 INFO [gov.nasa.miic.opendap.OPeNDAPFileCache] - 	Collection modisaqua (matches MYD021KM\.A(\d{7})\.(\d{4})\.\d{3}\.\d{13}\.hdf): 60 files
+2013-11-25 16:43:47,425 INFO [gov.nasa.miic.opendap.OPeNDAPDataCollector] - Located reference files: [http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.2145.005.2011002204948.hdf, http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.2135.005.2011002210104.hdf, http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.2140.005.2011002210053.hdf]
+2013-11-25 16:43:47,458 INFO [gov.nasa.miic.opendap.OPeNDAPDataCollector] - Located reference files: [http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.2015.005.2011002204747.hdf, http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.2005.005.2011002205625.hdf, http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.1950.005.2011002203851.hdf, http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.2000.005.2011002205114.hdf, http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.1955.005.2011002204824.hdf, http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.2010.005.2011002204113.hdf]
+2013-11-25 16:43:47,466 INFO [gov.nasa.miic.opendap.OPeNDAPDataCollector] - Located reference files: [http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.1515.005.2011002200722.hdf, http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.1510.005.2011002200459.hdf]
+2013-11-25 16:43:47,439 INFO [gov.nasa.miic.opendap.OPeNDAPDataCollector] - Located reference files: [http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.1635.005.2011002200414.hdf, http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.1645.005.2011002200245.hdf, http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.1640.005.2011002200305.hdf, http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.1655.005.2011002201249.hdf, http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.1650.005.2011002200718.hdf, http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.1700.005.2011002200503.hdf]
+2013-11-25 16:43:47,481 INFO [gov.nasa.miic.opendap.OPeNDAPDataCollector] - Located reference files: [http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.1825.005.2011002195641.hdf, http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.1815.005.2011002201604.hdf, http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.1840.005.2011002195830.hdf, http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.1820.005.2011002200605.hdf, http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.1810.005.2011002200615.hdf, http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.1835.005.2011002195619.hdf, http://projects.mechdyne.com:8080/opendap/hyrax/MYD021KM.A2011001.1830.005.2011002200027.hdf]
+2013-11-25 16:43:59,245 INFO [gov.nasa.miic.opendap.OPeNDAPFileCache] - Found 1711 files on OPeNDAP server http://projects.mechdyne.com:8080/opendap
+2013-11-25 16:43:59,310 INFO [gov.nasa.miic.opendap.OPeNDAPFileCache] - Contents of server http://projects.mechdyne.com:8080/opendap
+2013-11-25 16:43:59,310 INFO [gov.nasa.miic.opendap.OPeNDAPFileCache] - 	Collection modisaqua (matches MYD021KM\.A\d{7}\.\d{4}\.\d{3}\.\d{13}\.hdf): 60 files
+2013-11-25 16:43:59,311 INFO [gov.nasa.miic.opendap.OPeNDAPFileCache] - 	Collection goes13 (matches MCIDAS\.G-13\.(\d{4})\.(\d{2})\.(\d{2})\.(\d{4})\.08K\.bin): 24 files
+2013-11-25 16:43:59,311 INFO [gov.nasa.miic.opendap.OPeNDAPFileCache] - 	Collection goes13 (matches MCIDAS\.G-13\.\d{4}\.\d{2}\.\d{2}\.\d{4}\.08K\.bin): 24 files
+2013-11-25 16:43:59,311 INFO [gov.nasa.miic.opendap.OPeNDAPFileCache] - 	Collection modisaqua (matches MYD021KM\.A(\d{7})\.(\d{4})\.\d{3}\.\d{13}\.hdf): 60 files
+2013-11-25 16:43:59,328 INFO [gov.nasa.miic.opendap.OPeNDAPDataCollector] - Located target files: [http://projects.mechdyne.com:8080/opendap/hyrax/MCIDAS.G-13.2011.01.01.1745.08K.bin]
+2013-11-25 16:43:59,342 INFO [gov.nasa.miic.opendap.OPeNDAPDataCollector] - Located target files: [http://projects.mechdyne.com:8080/opendap/hyrax/MCIDAS.G-13.2011.01.01.1445.08K.bin]
+2013-11-25 16:43:59,341 INFO [gov.nasa.miic.opendap.OPeNDAPDataCollector] - Located target files: [http://projects.mechdyne.com:8080/opendap/hyrax/MCIDAS.G-13.2011.01.01.1945.08K.bin]
+2013-11-25 16:43:59,360 INFO [gov.nasa.miic.opendap.OPeNDAPDataCollector] - Located target files: [http://projects.mechdyne.com:8080/opendap/hyrax/MCIDAS.G-13.2011.01.01.2145.08K.bin]
+2013-11-25 16:43:59,363 INFO [gov.nasa.miic.opendap.OPeNDAPDataCollector] - Located target files: [http://projects.mechdyne.com:8080/opendap/hyrax/MCIDAS.G-13.2011.01.01.1645.08K.bin]
+2013-11-25 16:44:00,220 INFO [gov.nasa.miic.persistence.MIICHibernate] - storeICPlan Intercal of goes13 vs modisaqua
+2013-11-25 16:44:01,213 INFO [gov.nasa.miic.planprocessing.ICPlanExecutor] - Execute plan 7 until COLLECT
+2013-11-25 16:44:01,275 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/156/116/439514268http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_1515_005_2011002200722_hdf
+2013-11-25 16:44:01,412 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/162/068/2126791842http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_2015_005_2011002204747_hdf
+2013-11-25 16:44:01,684 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/205/187/1397472205http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_1825_005_2011002195641_hdf
+2013-11-25 16:44:01,711 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/131/066/-1998896509http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_2005_005_2011002205625_hdf
+2013-11-25 16:44:01,766 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/006/161/-502685434http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_1950_005_2011002203851_hdf
+2013-11-25 16:44:01,813 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/100/071/-1784592540http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_2145_005_2011002204948_hdf
+2013-11-25 16:44:01,855 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/244/038/2031822580http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_1635_005_2011002200414_hdf
+2013-11-25 16:44:01,868 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/237/056/505821421http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_2000_005_2011002205114_hdf
+2013-11-25 16:44:01,898 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/124/109/-416846468http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_1955_005_2011002204824_hdf
+2013-11-25 16:44:01,922 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/206/110/1016295118http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_2010_005_2011002204113_hdf
+2013-11-25 16:44:01,935 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/238/007/1143146478http_projects_mechdyne_com_8080_opendap_hyrax_MCIDAS_G_13_2011_01_01_1945_08K_bin
+2013-11-25 16:44:01,945 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/075/071/394151755http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_1815_005_2011002201604_hdf
+2013-11-25 16:44:01,955 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/002/152/1072011266http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_2135_005_2011002210104_hdf
+2013-11-25 16:44:02,015 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/053/011/1401031477http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_2140_005_2011002210053_hdf
+2013-11-25 16:44:02,042 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/210/019/159912914http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_1840_005_2011002195830_hdf
+2013-11-25 16:44:02,071 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/143/085/-738503281http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_1820_005_2011002200605_hdf
+2013-11-25 16:44:02,109 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/207/099/1502110671http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_1810_005_2011002200615_hdf
+2013-11-25 16:44:02,137 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/047/062/1846033967http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_1645_005_2011002200245_hdf
+2013-11-25 16:44:02,164 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/003/055/1453143811http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_1835_005_2011002195619_hdf
+2013-11-25 16:44:02,185 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/175/088/1666209967http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_1640_005_2011002200305_hdf
+2013-11-25 16:44:02,212 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/150/000/-515440490http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_1830_005_2011002200027_hdf
+2013-11-25 16:44:02,240 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/241/056/-577292047http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_1655_005_2011002201249_hdf
+2013-11-25 16:44:02,280 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/052/246/-712444364http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_1650_005_2011002200718_hdf
+2013-11-25 16:44:02,296 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/192/083/2135970752http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_1510_005_2011002200459_hdf
+2013-11-25 16:44:02,330 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/142/004/37225614http_projects_mechdyne_com_8080_opendap_hyrax_MCIDAS_G_13_2011_01_01_2145_08K_bin
+2013-11-25 16:44:02,443 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/020/119/727873300http_projects_mechdyne_com_8080_opendap_hyrax_MCIDAS_G_13_2011_01_01_1445_08K_bin
+2013-11-25 16:44:02,477 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/037/178/-712068571http_projects_mechdyne_com_8080_opendap_hyrax_MCIDAS_G_13_2011_01_01_1745_08K_bin
+2013-11-25 16:44:02,487 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/052/180/189314100http_projects_mechdyne_com_8080_opendap_hyrax_MYD021KM_A2011001_1700_005_2011002200503_hdf
+2013-11-25 16:44:02,575 INFO [gov.nasa.miic.opendap.CacheLoader] - Load cache file /home/cs420/Documents/workspace-sts-3.3.0.RELEASE/project_demo/MIIC/DODS/223/095/48586719http_projects_mechdyne_com_8080_opendap_hyrax_MCIDAS_G_13_2011_01_01_1645_08K_bin
+2013-11-25 16:44:03,221 INFO [gov.nasa.miic.persistence.MIICHibernate] - storeICPlan Intercal of goes13 vs modisaqua
+2013-11-25 16:44:05,223 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var SolarZenith to file /tmp/Jan_1_2011_Event_0_modisaqua_SolarZenith.png
+2013-11-25 16:44:09,236 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var SensorZenith to file /tmp/Jan_1_2011_Event_0_modisaqua_SensorZenith.png
+2013-11-25 16:44:10,032 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var RelativeAzimuth to file /tmp/Jan_1_2011_Event_0_modisaqua_RelativeAzimuth.png
+2013-11-25 16:44:10,612 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var TIME to file /tmp/Jan_1_2011_Event_0_modisaqua_TIME.png
+2013-11-25 16:44:11,274 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var EV_250_Aggr1km_RefSB_1 to file /tmp/Jan_1_2011_Event_0_modisaqua_EV_250_Aggr1km_RefSB_1.png
+2013-11-25 16:44:11,894 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var Longitude to file /tmp/Jan_1_2011_Event_0_modisaqua_Longitude.png
+2013-11-25 16:44:12,458 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var SensorAzimuth to file /tmp/Jan_1_2011_Event_0_modisaqua_SensorAzimuth.png
+2013-11-25 16:44:13,051 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var SolarAzimuth to file /tmp/Jan_1_2011_Event_0_modisaqua_SolarAzimuth.png
+2013-11-25 16:44:13,584 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var Latitude to file /tmp/Jan_1_2011_Event_0_modisaqua_Latitude.png
+2013-11-25 16:44:14,127 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var longitude to file /tmp/Jan_1_2011_Event_0_goes13_longitude.png
+2013-11-25 16:44:14,690 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var ViewingZenith to file /tmp/Jan_1_2011_Event_0_goes13_ViewingZenith.png
+2013-11-25 16:44:15,394 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var RelativeAzimuth to file /tmp/Jan_1_2011_Event_0_goes13_RelativeAzimuth.png
+2013-11-25 16:44:15,884 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var channel_data_0 to file /tmp/Jan_1_2011_Event_0_goes13_channel_data_0.png
+2013-11-25 16:44:16,310 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var TIME to file /tmp/Jan_1_2011_Event_0_goes13_TIME.png
+2013-11-25 16:44:16,833 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var latitude to file /tmp/Jan_1_2011_Event_0_goes13_latitude.png
+2013-11-25 16:44:17,337 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var SolarZenith to file /tmp/Jan_1_2011_Event_1_modisaqua_SolarZenith.png
+2013-11-25 16:44:17,928 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var SensorZenith to file /tmp/Jan_1_2011_Event_1_modisaqua_SensorZenith.png
+2013-11-25 16:44:18,436 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var RelativeAzimuth to file /tmp/Jan_1_2011_Event_1_modisaqua_RelativeAzimuth.png
+2013-11-25 16:44:19,088 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var TIME to file /tmp/Jan_1_2011_Event_1_modisaqua_TIME.png
+2013-11-25 16:44:19,961 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var EV_250_Aggr1km_RefSB_1 to file /tmp/Jan_1_2011_Event_1_modisaqua_EV_250_Aggr1km_RefSB_1.png
+2013-11-25 16:44:20,475 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var Longitude to file /tmp/Jan_1_2011_Event_1_modisaqua_Longitude.png
+2013-11-25 16:44:21,048 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var SensorAzimuth to file /tmp/Jan_1_2011_Event_1_modisaqua_SensorAzimuth.png
+2013-11-25 16:44:21,606 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var SolarAzimuth to file /tmp/Jan_1_2011_Event_1_modisaqua_SolarAzimuth.png
+2013-11-25 16:44:22,226 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var Latitude to file /tmp/Jan_1_2011_Event_1_modisaqua_Latitude.png
+2013-11-25 16:44:22,895 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var longitude to file /tmp/Jan_1_2011_Event_1_goes13_longitude.png
+2013-11-25 16:44:23,401 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var ViewingZenith to file /tmp/Jan_1_2011_Event_1_goes13_ViewingZenith.png
+2013-11-25 16:44:23,976 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var RelativeAzimuth to file /tmp/Jan_1_2011_Event_1_goes13_RelativeAzimuth.png
+2013-11-25 16:44:24,540 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var channel_data_0 to file /tmp/Jan_1_2011_Event_1_goes13_channel_data_0.png
+2013-11-25 16:44:25,011 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var TIME to file /tmp/Jan_1_2011_Event_1_goes13_TIME.png
+2013-11-25 16:44:25,620 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var latitude to file /tmp/Jan_1_2011_Event_1_goes13_latitude.png
+2013-11-25 16:44:26,115 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var SolarZenith to file /tmp/Jan_1_2011_Event_2_modisaqua_SolarZenith.png
+2013-11-25 16:44:26,521 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var SensorZenith to file /tmp/Jan_1_2011_Event_2_modisaqua_SensorZenith.png
+2013-11-25 16:44:26,884 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var RelativeAzimuth to file /tmp/Jan_1_2011_Event_2_modisaqua_RelativeAzimuth.png
+2013-11-25 16:44:27,223 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var TIME to file /tmp/Jan_1_2011_Event_2_modisaqua_TIME.png
+2013-11-25 16:44:27,768 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var EV_250_Aggr1km_RefSB_1 to file /tmp/Jan_1_2011_Event_2_modisaqua_EV_250_Aggr1km_RefSB_1.png
+2013-11-25 16:44:28,161 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var Longitude to file /tmp/Jan_1_2011_Event_2_modisaqua_Longitude.png
+2013-11-25 16:44:28,577 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var SensorAzimuth to file /tmp/Jan_1_2011_Event_2_modisaqua_SensorAzimuth.png
+2013-11-25 16:44:29,034 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var SolarAzimuth to file /tmp/Jan_1_2011_Event_2_modisaqua_SolarAzimuth.png
+2013-11-25 16:44:29,404 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var Latitude to file /tmp/Jan_1_2011_Event_2_modisaqua_Latitude.png
+2013-11-25 16:44:29,748 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var longitude to file /tmp/Jan_1_2011_Event_2_goes13_longitude.png
+2013-11-25 16:44:30,105 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var ViewingZenith to file /tmp/Jan_1_2011_Event_2_goes13_ViewingZenith.png
+2013-11-25 16:44:30,522 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var RelativeAzimuth to file /tmp/Jan_1_2011_Event_2_goes13_RelativeAzimuth.png
+2013-11-25 16:44:30,995 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var channel_data_0 to file /tmp/Jan_1_2011_Event_2_goes13_channel_data_0.png
+2013-11-25 16:44:31,387 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var TIME to file /tmp/Jan_1_2011_Event_2_goes13_TIME.png
+2013-11-25 16:44:31,960 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var latitude to file /tmp/Jan_1_2011_Event_2_goes13_latitude.png
+2013-11-25 16:44:32,334 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var SolarZenith to file /tmp/Jan_1_2011_Event_3_modisaqua_SolarZenith.png
+2013-11-25 16:44:32,859 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var SensorZenith to file /tmp/Jan_1_2011_Event_3_modisaqua_SensorZenith.png
+2013-11-25 16:44:33,375 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var RelativeAzimuth to file /tmp/Jan_1_2011_Event_3_modisaqua_RelativeAzimuth.png
+2013-11-25 16:44:33,843 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var TIME to file /tmp/Jan_1_2011_Event_3_modisaqua_TIME.png
+2013-11-25 16:44:34,345 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var EV_250_Aggr1km_RefSB_1 to file /tmp/Jan_1_2011_Event_3_modisaqua_EV_250_Aggr1km_RefSB_1.png
+2013-11-25 16:44:34,825 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var Longitude to file /tmp/Jan_1_2011_Event_3_modisaqua_Longitude.png
+2013-11-25 16:44:35,260 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var SensorAzimuth to file /tmp/Jan_1_2011_Event_3_modisaqua_SensorAzimuth.png
+2013-11-25 16:44:35,703 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var SolarAzimuth to file /tmp/Jan_1_2011_Event_3_modisaqua_SolarAzimuth.png
+2013-11-25 16:44:36,161 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var Latitude to file /tmp/Jan_1_2011_Event_3_modisaqua_Latitude.png
+2013-11-25 16:44:36,551 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var longitude to file /tmp/Jan_1_2011_Event_3_goes13_longitude.png
+2013-11-25 16:44:36,998 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var ViewingZenith to file /tmp/Jan_1_2011_Event_3_goes13_ViewingZenith.png
+2013-11-25 16:44:37,467 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var RelativeAzimuth to file /tmp/Jan_1_2011_Event_3_goes13_RelativeAzimuth.png
+2013-11-25 16:44:37,940 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var channel_data_0 to file /tmp/Jan_1_2011_Event_3_goes13_channel_data_0.png
+2013-11-25 16:44:38,358 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var TIME to file /tmp/Jan_1_2011_Event_3_goes13_TIME.png
+2013-11-25 16:44:38,867 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var latitude to file /tmp/Jan_1_2011_Event_3_goes13_latitude.png
+2013-11-25 16:44:39,279 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var SolarZenith to file /tmp/Jan_1_2011_Event_4_modisaqua_SolarZenith.png
+2013-11-25 16:44:39,796 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var SensorZenith to file /tmp/Jan_1_2011_Event_4_modisaqua_SensorZenith.png
+2013-11-25 16:44:40,322 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var RelativeAzimuth to file /tmp/Jan_1_2011_Event_4_modisaqua_RelativeAzimuth.png
+2013-11-25 16:44:40,825 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var TIME to file /tmp/Jan_1_2011_Event_4_modisaqua_TIME.png
+2013-11-25 16:44:41,359 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var EV_250_Aggr1km_RefSB_1 to file /tmp/Jan_1_2011_Event_4_modisaqua_EV_250_Aggr1km_RefSB_1.png
+2013-11-25 16:44:41,891 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var Longitude to file /tmp/Jan_1_2011_Event_4_modisaqua_Longitude.png
+2013-11-25 16:44:42,383 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var SensorAzimuth to file /tmp/Jan_1_2011_Event_4_modisaqua_SensorAzimuth.png
+2013-11-25 16:44:42,893 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var SolarAzimuth to file /tmp/Jan_1_2011_Event_4_modisaqua_SolarAzimuth.png
+2013-11-25 16:44:43,392 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var Latitude to file /tmp/Jan_1_2011_Event_4_modisaqua_Latitude.png
+2013-11-25 16:44:43,843 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var longitude to file /tmp/Jan_1_2011_Event_4_goes13_longitude.png
+2013-11-25 16:44:44,244 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var ViewingZenith to file /tmp/Jan_1_2011_Event_4_goes13_ViewingZenith.png
+2013-11-25 16:44:44,678 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var RelativeAzimuth to file /tmp/Jan_1_2011_Event_4_goes13_RelativeAzimuth.png
+2013-11-25 16:44:45,104 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var channel_data_0 to file /tmp/Jan_1_2011_Event_4_goes13_channel_data_0.png
+2013-11-25 16:44:45,507 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var TIME to file /tmp/Jan_1_2011_Event_4_goes13_TIME.png
+2013-11-25 16:44:45,907 INFO [gov.nasa.miic.graphics.JFreePlotter] - Plot data var latitude to file /tmp/Jan_1_2011_Event_4_goes13_latitude.png
+2013-11-25 16:44:46,338 INFO [gov.nasa.miic.util.RegressionHelper] - Filter statistics:
+2013-11-25 16:44:46,376 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@255d8ff: startup date [Mon Nov 25 16:42:49 EST 2013]; root of context hierarchy
+2013-11-25 16:44:46,378 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7291ca34: defining beans [org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#1,sessionFactory,transactionManager,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,miicDAO,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#2,miicService,icPlanValidator,dataVarPlotter,gov.nasa.miic.persistence.PrepareDataStore#0,opendapCache,execFactory,leoGeoPredictor,leoLeoPredictor,tleFactory,goes13,goes12,modisaqua,envisat,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2013-11-27 22:10:51,693 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from URL [file:src/main/webapp/WEB-INF/spring/miicConfig.xml]
+2013-11-27 22:10:52,956 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from URL [file:src/main/webapp/WEB-INF/spring/applicationContext-hibernate.xml]
+2013-11-27 22:10:53,233 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from URL [file:src/main/webapp/WEB-INF/spring/applicationContext-dataSource.xml]
+2013-11-27 22:10:53,565 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@3bd92abb: startup date [Wed Nov 27 22:10:53 EST 2013]; root of context hierarchy
+2013-11-27 22:10:54,385 INFO [org.springframework.context.support.PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2013-11-27 22:10:54,419 INFO [org.springframework.context.support.PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2013-11-27 22:10:54,431 INFO [org.springframework.context.support.PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [miic.properties]
+2013-11-27 22:10:54,710 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@37d0df29: defining beans [org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#1,sessionFactory,transactionManager,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,miicDAO,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#2,miicService,icPlanValidator,dataVarPlotter,gov.nasa.miic.persistence.PrepareDataStore#0,opendapCache,execFactory,leoGeoPredictor,leoLeoPredictor,tleFactory,goes13,goes12,modisaqua,envisat,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2013-11-27 22:10:56,129 INFO [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2013-11-27 22:10:56,238 INFO [org.hibernate.Version] - HHH000412: Hibernate Core {4.1.0.Final}
+2013-11-27 22:10:56,265 INFO [org.hibernate.cfg.Environment] - HHH000206: hibernate.properties not found
+2013-11-27 22:10:56,285 INFO [org.hibernate.cfg.Environment] - HHH000021: Bytecode provider name : javassist
+2013-11-27 22:10:59,886 INFO [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2013-11-27 22:10:59,947 INFO [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2013-11-27 22:11:00,008 INFO [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2013-11-27 22:11:00,027 INFO [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] - HHH000397: Using ASTQueryTranslatorFactory
+2013-11-27 22:11:00,973 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000228: Running hbm2ddl schema update
+2013-11-27 22:11:00,975 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000102: Fetching database metadata
+2013-11-27 22:11:01,007 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000396: Updating schema
+2013-11-27 22:11:01,162 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: public.analysis
+2013-11-27 22:11:01,163 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [reference_band, id, target_instrumentname, target_band, target_variablename, reference_variablename, reference_instrumentname, filters]
+2013-11-27 22:11:01,163 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: [fkc6ca96fccd5b17df, fkc6ca96fcadd38053]
+2013-11-27 22:11:01,164 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: [analysis_pkey]
+2013-11-27 22:11:01,247 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: public.data_variables
+2013-11-27 22:11:01,247 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [bands, name, generator, averaged, missingvalue, instrumentname, instrument]
+2013-11-27 22:11:01,248 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: [fk23c55b22dfa7e386]
+2013-11-27 22:11:01,248 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: [data_variables_pkey]
+2013-11-27 22:11:01,350 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: public.event_data
+2013-11-27 22:11:01,351 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [id, data, type]
+2013-11-27 22:11:01,352 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: []
+2013-11-27 22:11:01,354 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: [event_data_pkey]
+2013-11-27 22:11:01,437 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: public.event_data_files
+2013-11-27 22:11:01,438 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [event_dataid, file]
+2013-11-27 22:11:01,438 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: [fk1fa84467ff691f06]
+2013-11-27 22:11:01,439 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: []
+2013-11-27 22:11:01,509 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: public.events
+2013-11-27 22:11:01,510 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [planid, latsouth, id, reason, referencedataid, targetdataid, state, lonwest, latnorth, loneast, enddate, begindate]
+2013-11-27 22:11:01,511 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: [fkb307e119a02128ff, fkb307e1192bb230cc, fkb307e119d69c1692]
+2013-11-27 22:11:01,511 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: [events_pkey]
+2013-11-27 22:11:01,574 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: public.instruments
+2013-11-27 22:11:01,575 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [filestartdatepattern, fileduration, filenameformat, name, filedurationmask, rsr, type, satid, providerinfo]
+2013-11-27 22:11:01,576 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: []
+2013-11-27 22:11:01,576 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: [instruments_pkey]
+2013-11-27 22:11:01,634 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: public.plan_prediction_ranges
+2013-11-27 22:11:01,635 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [planid, reason, state, enddate, begindate]
+2013-11-27 22:11:01,636 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: [fk794f50f0a02128ff]
+2013-11-27 22:11:01,636 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: []
+2013-11-27 22:11:01,700 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: public.plans
+2013-11-27 22:11:01,701 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [predictorproperties, id, refinstrumentname, reason, created, name, state, owner, datacollectionoptions, tgtinstrumentname]
+2013-11-27 22:11:01,702 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: [fk65cda6ab8c6cde4, fk65cda6a73e1532]
+2013-11-27 22:11:01,704 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: [plans_pkey]
+2013-11-27 22:11:01,777 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: public.reference_data_variable_refs
+2013-11-27 22:11:01,778 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [planid, variablename, band, instrumentname]
+2013-11-27 22:11:01,778 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: [fk5a44f3c2a02128ff, fk5a44f3c27d972bf7]
+2013-11-27 22:11:01,779 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: []
+2013-11-27 22:11:01,841 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: public.target_data_variable_refs
+2013-11-27 22:11:01,842 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [planid, variablename, band, instrumentname]
+2013-11-27 22:11:01,842 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: [fk88e11fbc7d972bf7, fk88e11fbca02128ff]
+2013-11-27 22:11:01,843 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: []
+2013-11-27 22:11:01,846 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000232: Schema update complete
+2013-11-27 22:11:02,089 INFO [org.springframework.orm.hibernate4.HibernateTransactionManager] - Using DataSource [org.apache.commons.dbcp.BasicDataSource@2bd0f497] of Hibernate SessionFactory for HibernateTransactionManager
+2013-11-27 22:11:02,454 INFO [gov.nasa.miic.opendap.OPeNDAPFileCache] - Contents of cache for server http://projects.mechdyne.com:8080/opendap
+2013-11-27 22:11:02,454 INFO [gov.nasa.miic.opendap.OPeNDAPFileCache] - 	Collection modisaqua (matches MYD021KM\.A\d{7}\.\d{4}\.\d{3}\.\d{13}\.hdf): 60 files
+2013-11-27 22:11:02,455 INFO [gov.nasa.miic.opendap.OPeNDAPFileCache] - 	Collection goes13 (matches MCIDAS\.G-13\.(\d{4})\.(\d{2})\.(\d{2})\.(\d{4})\.08K\.bin): 24 files
+2013-11-27 22:11:02,455 INFO [gov.nasa.miic.opendap.OPeNDAPFileCache] - 	Collection goes13 (matches MCIDAS\.G-13\.\d{4}\.\d{2}\.\d{2}\.\d{4}\.08K\.bin): 24 files
+2013-11-27 22:11:02,455 INFO [gov.nasa.miic.opendap.OPeNDAPFileCache] - 	Collection modisaqua (matches MYD021KM\.A(\d{7})\.(\d{4})\.\d{3}\.\d{13}\.hdf): 60 files
+2013-11-27 22:11:06,210 INFO [gov.nasa.miic.persistence.MIICHibernate] - getInstrumentByName goes13
+2013-11-27 22:11:07,575 INFO [gov.nasa.miic.persistence.MIICHibernate] - getInstrumentByName goes12
+2013-11-27 22:11:07,610 INFO [gov.nasa.miic.persistence.MIICHibernate] - getInstrumentByName modisaqua
+2013-11-27 22:11:07,729 INFO [gov.nasa.miic.persistence.MIICHibernate] - getInstrumentByName envisat
+2013-11-27 22:11:08,363 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@3bd92abb: startup date [Wed Nov 27 22:10:53 EST 2013]; root of context hierarchy
+2013-11-27 22:11:08,368 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@37d0df29: defining beans [org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#1,sessionFactory,transactionManager,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,miicDAO,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#2,miicService,icPlanValidator,dataVarPlotter,gov.nasa.miic.persistence.PrepareDataStore#0,opendapCache,execFactory,leoGeoPredictor,leoLeoPredictor,tleFactory,goes13,goes12,modisaqua,envisat,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy

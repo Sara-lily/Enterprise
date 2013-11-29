@@ -1,0 +1,93 @@
+body {
+	background-image:url("../images/satellite.jpg"); 
+	background-repeat:no-repeat;
+	background-size: 100%;
+	}
+	
+.titleBar {
+	background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    top: 50;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    margin-left: 8px;
+    margin-bottom: 50px;	
+}
+
+.titleBarContent {
+	margin: 15px;
+    padding: 10px;
+    font-size: 2em;
+}
+
+.form {
+	position:relative;
+	left:-20px;
+	background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0;
+	margin: 0;
+    
+}
+
+.formContent {
+    margin: 15px;
+    padding: 10px;
+    padding-left: 100px;
+}
+
+.label {
+	display: inline-block;
+    float: left;
+    clear: left;
+    text-align:left;
+    width: 250px;
+	color: white;
+	font-size: 1.5em;
+	margin-right:15px;
+}
+
+.alignBox {
+	display: inline-block;
+}
+
+.input {
+    background-color:rgba(0,0,0,0.4);
+    border: 0;
+    color: white;
+    font-size: 1.5em;
+    width: 300px;
+    margin: 5px;
+}
+
+.formOptions {
+	position:relative;
+	left:-20px;
+	background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0;
+	margin: 0;
+	width: 25%;
+}
+
+.formOptionsContent {
+	margin: 15px;
+    padding: 10px;
+    padding-left: 100px;
+}
+
+.button {
+	background-color:rgba(0, 0, 0, 0.6);
+	padding: 5px;
+	color:white;
+	border:none;
+	font-size:1.5em;
+	border:solid thin transparent;
+}
+
+.button:hover {
+	background-color:rgba(0, 0, 0, .1);
+	border-color: white;
+} 
